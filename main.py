@@ -1,7 +1,7 @@
 from PIL import Image
 import numpy as np
 import pandas as pd
-import streamlit as     
+import streamlit as st
 import gzip
 from io import BytesIO
 
