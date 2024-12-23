@@ -13,9 +13,9 @@ if uploaded_file is not None:
     image = Image.open(uploaded_file)
 
     image = image.resize((128, 128))
-    st.write("Photo changed to 128 X 128 pix successfully!")
     st.image(image, caption="Uploaded Photo",  use_container_width=True)
     st.write("Photo uploaded successfully!")
+    st.write("Photo changed to 128 X 128 pix successfully!")
     
     arr = np.array(image)
     height, width, channels = arr.shape
