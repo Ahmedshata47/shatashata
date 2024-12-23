@@ -5,14 +5,14 @@ import streamlit as st
 import gzip
 from io import BytesIO
 
-st.title("Converter photos into csv file")
+st.title("Converter Photos Into Csv File")
 uploaded_file = st.file_uploader("Upload a photo", type=["jpg", "jpeg", "png"])
 
 if uploaded_file is not None:
 
     image = Image.open(uploaded_file)
 
-    st.image(image, caption="Uploaded Photo", use_column_width=True)
+    st.image(image, caption="Uploaded Photo",  use_container_width=True)
     st.write("Photo uploaded successfully!")
     image = image.resize((128, 128))
     st.write("Photo changed to 128 X 128 pix successfully!")
